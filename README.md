@@ -1,8 +1,9 @@
 killbill-feedzai-plugin
 =======================
 
-Kill Bill fraud plugin based on the Feedzai API. The plugin was showcased during the Money20/20 Hackathon:
+Kill Bill fraud plugin based on the Feedzai API. The plugin uses the open source  [Feedzai client library](https://github.com/killbill/feedzai-client). The plugin will intercept the payment calls prior doing the authorization and score the payment. If the score is too high (likely fraudulent), the authorization gets aborted, and the checkout flow can be modified accordingly.
 
+The plugin was showcased during the Money20/20 Hackathon:
 
 Of the five global regions, Latin America has the fastest growing internet population, increasing 12 percent in the past year to more than 147 million unique visitors in March 2013. Demand for online payments is huge.
 
